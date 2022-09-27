@@ -1,7 +1,7 @@
 int red_led = 12;
 int yellow_led = 11;
 int green_led = 10;
-int push_button = 6;
+int push_button = 2;
 int button;
 
 void setup()
