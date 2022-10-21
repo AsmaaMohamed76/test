@@ -170,7 +170,7 @@ class Ui_MainWindow(object):
 
     #Remove character
     def remove_it(self):
-        # Grab what's on the screen already
+        #what's on the screen already
         self.outputLabel.text()
         # Output back to the screen removing last item in the list/string
         self.outputLabel.setText(self.outputLabel.text()[:-1])
