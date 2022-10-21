@@ -148,7 +148,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
     def math_it(self):
-        # Grab what's on the screen already
+        #what's on the screen already
         self.outputLabel.text()
         try:
             answer = eval(self.outputLabel.text())
@@ -160,7 +160,7 @@ class Ui_MainWindow(object):
   
     #Change from positive/negative
     def plus_minus_it(self):
-        # Grab what's on the screen already
+        #what's on the screen already
         self.outputLabel.text()
         if "-" in self.outputLabel.text():
             self.outputLabel.setText(self.outputLabel.text().replace("-",""))
@@ -185,7 +185,6 @@ class Ui_MainWindow(object):
              #Check to see if starts with 0 delete 0
             if self.outputLabel.text() == "0":
                 self.outputLabel.setText("")
-             #Concatenate the pressed button with was there already
             self.outputLabel.setText(f'{self.outputLabel.text()}{pressed}')
             
     def retranslateUi(self, MainWindow):
